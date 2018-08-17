@@ -1,0 +1,18 @@
+# Jekyll Library Website Generator
+
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
+# Site settings
+title: Idaho Queered
+tagline: "Preserving LGBTQ history through video story telling" 
+description: "" 
+keywords: Idaho, LGBTQ
+email: dbecker@uidaho.edu
+
+# url variables
+# url: https://lib.uidaho.edu
+# baseurl: /queered
+# dev urls for gh-pages
+url: https://uidaholib.github.io
+baseurl: /queered_source
