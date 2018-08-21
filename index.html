@@ -22,7 +22,6 @@ layout: default
         <div class="row">
         {% for story in site.data.images %}
         <!-- story box -->
-        
         <div class="col-6 stories mb-2" id="story{{ story.id }}">
             <div class="{% cycle 'bg-success', 'bg-danger', 'bg-warning', 'bg-info' %} p-3 index-box d-flex justify-content-center align-items-center" type="button" data-toggle="modal" data-target="#modal{{ story.id }}">
                 <img src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person">
@@ -39,7 +38,13 @@ layout: default
                         </button>
                     </div>
                     <div class="modal-body">
+                        {% if story.youtube %}
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ story.youtube }}?rel=0" allowfullscreen></iframe>
+                          </div>
+                        {% else %}
                         <img class="img-fluid" src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person">
+                        {% endif %}
                         <p>{{ story.story }}</p>
                     </div>
                 </div>
