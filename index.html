@@ -3,28 +3,20 @@ title: Idaho Queered
 layout: default
 ---
 
-<div class="container-fluid">
+<div class="container">
+
     <div class="row pt-3">
-<div class="col-sm-6">
-            <p>Denise Bennett wants LGBTQ people throughout Idaho to tell their stories. Since 2017, Bennett has traveled across Idaho, recording interviews with members of the LGBTQ community who are willing to speak about their experience.</p>
-            <p>The National Endowment for the Humanities (NEH) thought her work so important that they granted her a $30,000 challenge grant. The challenge is to match that $30,000 with non-federal or -state grants and donations.</p>
-                <h3>We Need Your Help!</h3>
-                <p>The NEH funds are only made available if we match them. Anything you can spare will help us reach our goal for this project!</p>
-                <p>The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or online <a href="uidaho.edu/giving">UIdaho Giving</a> by noting "Idaho’s LGBTQ Community Oral History Project" in the designation.</p>
-                <hr>
-                <h4>Join us for a preview of Denise's work. Selected clips from these histories will be shown together with Bennett's documentary on the murder of Steven Nelson, <em>Gott's Point</em>, at the Kenworthy Theatre in downtown Moscow, Idaho. The event will be by donation
-                
-     
-               
-            
+
+<div class="col-sm-5">
+        <h4 class="bg-info text-white p-2" style="height:325px; width:325px;">Join us for a preview of Denise's work. Selected clips from these histories will be shown together with Bennett's documentary on the murder of Steven Nelson, <em>Gott's Point</em>, at the Kenworthy Theatre in downtown Moscow, Idaho at 6:30 PM on Thursday, August 23. Donations at the door!</h4>
 </div>
-<div class="col-sm-6">
+<div class="col-sm-7 bg-secondary text-white pt-3">
         <div class="row">
         {% for story in site.data.images %}
         <!-- story box -->
-        <div class="col-6 stories mb-2" id="story{{ story.id }}">
-            <div class="{% cycle 'bg-success', 'bg-danger', 'bg-warning', 'bg-info' %} p-3 index-box d-flex justify-content-center align-items-center" type="button" data-toggle="modal" data-target="#modal{{ story.id }}">
-                <img src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person">
+        <div class="col-6 stories mb-2" id="story{{ story.id }}" style="height:225px; width:225px;">
+            <div class="p-3 index-box d-flex justify-content-center align-items-center" type="button" data-toggle="modal" data-target="#modal{{ story.id }}">
+                <img src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person" >
             </div>
         </div>
         <!-- story modal -->
@@ -53,6 +45,15 @@ layout: default
         {% endfor %}
         </div>
     </div>
+    <div class="col-sm-4">
+            <p class="p=2" style="height:300px; width:300px; border:black 1px solid">Idaho <sup>Queered</sup> is an Oral History project led by University of Idaho Professor Denise Bennett. Since 2016, Bennett has traveled across Idaho, recording interviews with members of the LGBTQ community who are willing to speak about their experience.</p> 
+        
+                <h3>We Need Your Help!</h3>
+                <p>Bennett's work is being funded by a challenge grant from the National Endowment for the Humanties. In order to access the $30,000 the NEH has made available, we need grants and donations.</p>
+                <p>The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or online <a href="uidaho.edu/giving">UIdaho Giving</a> by noting "Idaho’s LGBTQ Community Oral History Project" in the designation.</p>
+                <hr>
+             
+</div>
     </div>
     <div class="row bg-secondary text-white p-5 mt-4">
         <div class="col-sm-8 ">

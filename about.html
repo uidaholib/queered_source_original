@@ -3,51 +3,25 @@ title: About Idaho Queered
 layout: default
 ---
 
-<div class="container-fluid">
+<div class="container">
     <div class="row pt-3">
 <div class="col-sm-6">
-        <div class="modal-body">
+       
                 <p>Bennett is collaborating with the <a href="https://cdil.lib.uidaho.edu">Center for Digital Inquiry and Learning (CDIL)</a> to collect, digitize and archive oral histories from members of the LGBTQ community across Idaho. These oral histories will be made publicly available via the Idaho <sup>Queered</sup> website over the course of the next two years.</p>
-                    
-                Since 2017, Bennett has traveled across Idaho, conducting interviews with members of the LGBTQ community who are willing to speak about their experience. “We want to get a contemporary and diverse history represented,” Bennett said. “The goal is to document histories in every county of Idaho.”</p>
-            <p>“It’s history. I want to document history.” Bennett said. “It’s just getting the word out and convincing people their life is interesting enough to tell.”</p>
+                <p>Idaho <sup>Queered</sup> is supported by the National Endowment for the Humanities, the Pride Foundation, the Idaho Women's Giving Circle, and the Latah County Community Foundation.</p> 
+                
+               
 </div>
 <div class="col-sm-6">
-        <div class="row">
-        {% for story in site.data.images %}
-        <!-- story box -->
-        
-        <div class="col-6 stories mb-2" id="story{{ story.id }}">
-            <div class="{% cycle 'bg-success', 'bg-danger', 'bg-warning', 'bg-info' %} p-3 index-box d-flex justify-content-center align-items-center" type="button" data-toggle="modal" data-target="#modal{{ story.id }}">
-                <img src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person">
-            </div>
-        </div>
-        <!-- story modal -->
-        <div class="modal fade" id="modal{{ story.id }}" tabindex="-1" role="dialog" aria-labelledby="modalTitle{{ story.id }}" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalTitle{{ story.id }}">{{ story.county }}</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid" src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person">
-                        <p>{{ story.story }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-        </div>
+        <h4 class="bg-info text-white p-3"> “We want to get a contemporary and diverse history represented. The goal is to document histories in every county of Idaho. It’s history. I want to document history. It’s just getting the word out and convincing people their life is interesting enough to tell.”<br/><br>
+        <span class="text-right">Denise Bennett</span></h4>
     </div>
     </div>
     <div class="row bg-secondary text-white p-5 mt-4">
         <div class="col-sm-8 ">
-                The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or online <a href="uidaho.edu/giving">UIdaho Giving</a> by noting "Idaho’s LGBTQ Community Oral History Project" in the designation. <br>
+                The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or online <a href="https://uidaho.edu/giving">UIdaho Giving</a> by noting "Idaho’s LGBTQ Community Oral History Project" in the designation. <br>
             </div>
-            <div class="col-sm-3 text-center "> <a href="uidaho.edu/giving" class="mt-0 btn btn-primary btn-lg" >UIdaho Giving</a> 
+            <div class="col-sm-3 text-center "> <a href="https://uidaho.edu/giving" class="mt-0 btn btn-info btn-lg" >UIdaho Giving</a> 
             </div>
         </div>
 </div>
