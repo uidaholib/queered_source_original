@@ -9,4 +9,4 @@ jekyll source for digital oral history project
 
 ## Giving
 
-The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or uidaho.edu/giving by noting “Idaho’s LGBTQ Community Oral History Project” in the designation. 
+The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or https://www.givecampus.com/campaigns/3269/donations/new by noting “Idaho’s LGBTQ Community Oral History Project” in the designation. 
