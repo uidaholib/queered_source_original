@@ -8,6 +8,9 @@ body {
    // background: $background-color;
 }
 /* index */ 
+.about-box {
+    border: solid 1px #00AEC7;
+}
 .index-box {
     height: 250px;
     img {
@@ -15,7 +18,10 @@ body {
         max-width: 100%;
     }
 }
-.stories { display: none; }
+.stories { 
+    cursor: pointer;
+    //display: none; 
+}
 
 .rainbow {
     background: red;
