@@ -5,7 +5,7 @@ layout: default
 
 <div class="container">
     <div class="alert alert-primary mt-3" role="alert">
-        Join us for a <a href="https://www.uidaho.edu/news/news-articles/news-releases/2018-august/081518-gottspoint">preview of Denise's work</a>. Selected clips from these histories will be screened together with Bennett's documentary on the murder of Steven Nelson, <em>Gott's Point</em>, at the <strong>Kenworthy Theatre</strong> in downtown Moscow, Idaho at <strong>6:30 PM on Thursday, August 23rd</strong>. Donations at the door!
+        Join us for a <a href="https://www.uidaho.edu/news/news-articles/news-releases/2018-august/081518-gottspoint">preview of Denise's work</a>. Selected clips from these histories will be screened together with Bennett's documentary on the murder of Steven Nelson, <em>Gotts Point</em>, at the <strong>Kenworthy Theatre</strong> in downtown Moscow, Idaho at <strong>6:30 PM on Thursday, August 23rd</strong>. Donations at the door!
     </div>
 
     <div class="row pt-3">
@@ -15,14 +15,37 @@ layout: default
             <p><strong class="h3">Idaho <sup>Queered</sup></strong> is an Oral History project led by University of Idaho Professor Denise Bennett. Since 2016, Bennett has traveled across Idaho, recording interviews with members of the LGBTQ community who are willing to speak about their experience.</p>
             <h3>We Need Your Help!</h3>
             <p>Bennett's work is being funded by a challenge grant from the National Endowment for the Humanties. In order to access the $30,000 the NEH has made available, we need grants and donations.</p>
-            <p>The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or online <a href="https://www.givecampus.com/campaigns/3269/donations/new">UIdaho Giving</a> by noting "Idaho’s LGBTQ Community Oral History Project" in the designation.</p>
-        </div>        
-    
+            <p>The "Idaho Queered" project can be supported by donations to the University of Idaho Foundation at 208-885-4000 or online <a href="https://www.givecampus.com/campaigns/3269/donations/new" target="_blank">UIdaho Giving</a> by noting "Idaho’s LGBTQ Community Oral History Project" in the designation.</p>
+        </div>     
+        <div class="col-sm-6 p-3 mb-3 justify-content-center" >
+                <a class="mx-auto justify-content-center" type="button" data-toggle="modal" data-target="#modalgotts" style="cursor: pointer;">
+            <img src="{{ '/assets/images/queered_car.png' | relative_url }}" class="img-fluid text-center" style="max-height: 400px;">
+                </a>
+            
+        </div>     
+        <div class="modal fade" id="modalgotts" tabindex="-1" role="dialog" aria-labelledby="modalgotts" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitlemodalgotts">Join Us for a Preview of Gotts Point and Support Idaho <sup>Queered</sup> </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                                <img src="{{ '/assets/images/gotts.jpg' | relative_url }}" class="img-fluid float-left pr-2" >
+                        </div>
+                    </div>
+                </div>
+        </div>
+<div class="col-12">
+    <h2>Oral History Previews</h2>
+</div>
         {% for story in site.data.images %}
         <!-- story box -->
         <div class="col-sm-6 stories d-flex justify-content-center align-items-center mb-3" id="story{{ story.id }}" >
             <div class="" type="button" data-toggle="modal" data-target="#modal{{ story.id }}">
-                <img src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person" class="img-fluid">
+                <img src="{{ '/assets/images/' | append: story.image | relative_url }}" alt="{{ story.county }} person" class="img-fluid" style="max-width: 400px;">
             </div>
         </div>
         <!-- story modal -->
