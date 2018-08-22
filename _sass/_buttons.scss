@@ -106,6 +106,9 @@ border-color: $palouse-green;
 .palouse-green{
     color:$palouse-green !important;
 }
+.bg-palouse-green{
+    background-color:$palouse-green !important;
+}
 
 .border-palouse-green{
     border-color:$palouse-green !important;
@@ -138,7 +141,9 @@ border-color: $clearwater;
 .border-clearwater{
     border-color:$clearwater !important;
 }
-
+.bg-clearwater {
+    background-color: $clearwater !important;
+}
 .btn-clearwater-light{
     color: #fff;
     background-color: $clearwater-light;
