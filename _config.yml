@@ -11,8 +11,8 @@ keywords: Idaho, LGBTQ
 email: dbecker@uidaho.edu
 
 # url variables
-# url: https://lib.uidaho.edu
-# baseurl: /queered
+url: https://lib.uidaho.edu
+baseurl: /queered
 # dev urls for gh-pages
-url: https://uidaholib.github.io
-baseurl: /queered_source
+#url: https://uidaholib.github.io
+#baseurl: /queered_source
