@@ -1,16 +1,13 @@
 field,display-name,dc-map,browse-link
-title,Title,DC.title
-creator,Creator,DC.creator
-date,Date Created,DCTERMS.created
-date is approximate,Approximated Date
+title,Interviewee,DC.title
+interviewer,Interviewer,
+date,Date,DCTERMS.created
 description,Description,DC.description
-subject,Subjects,DC.subject,true
 location,Location
 latitude,Latitude
 longitude,Longitude
-collection,Source Collection
-identifier,Source Identifier
+transcriber,Transcribed by
 type,Type,DC.type
-format original,Format Original
 format,Format
-rightsstatement,Rights
+standardized_rights,Rights
+rights_statement,Rights Statement
