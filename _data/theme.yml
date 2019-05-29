@@ -2,6 +2,7 @@
 
 # Site settings
 title: Idaho Queered
+fancy-title: Idaho<sup class="rainbow">Queered</sup>
 # choose metadata, be sure to also change page_gen data setting!
 metadata: idlgbtq # check against cdm-collection-id below -- this should be used in config file as well
 
@@ -11,11 +12,11 @@ metadata: idlgbtq # check against cdm-collection-id below -- this should be used
 # contentdm collection name 
 # cdm-collection-id: boxing 
 # Objects dir location
-objects: https://www.lib.uidaho.edu/queered/objects/
+objects: https://www.lib.uidaho.edu/queered/objects
 
 # header and head metadata
 tagline: Proud Histories from the Gem State
-description: "Preserving LGBTQ history through video story telling" 
+description: "Preserving LGBTQ history through video story telling." 
 keywords: "Idaho; LGBTQ; oral history" # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 

@@ -6,7 +6,7 @@ gallery: true
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ '/browse.html' | absolute_url }}">Items</a></li>
+        <li class="breadcrumb-item"><a href="{{ '/browse.html' | absolute_url }}">Interviews</a></li>
         <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
     </ul>
 
@@ -14,8 +14,8 @@ gallery: true
         <div class="col-md-6" id="lightgallery" >
             <div class="card mb-2">
                 {% if page.format contains 'image' %}
-                <div class="gallery-img" data-src="{% include image/original.html %}">
-                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                <div class="gallery-img" data-src="{{ site.data.theme.objects }}/{{ item.object-id }}.jpg">
+                    <p><img src="{{ site.data.theme.objects }}/{{ page.object-id }}.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                     <p class="text-center"><small>Click to view full screen</small></p>
                 </div>
                 {%- elsif page.format contains 'audio' -%}
@@ -29,7 +29,7 @@ gallery: true
                 </div>
                 {%- elsif page.youtube-id -%}
                 <div>
-                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                    <p><img src="{{ site.data.theme.objects }}/{{ page.object-id }}.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
                 </div>
                 {%- elsif page.format contains 'video' -%}
                 <div class="mt-4">
@@ -43,7 +43,7 @@ gallery: true
                 {%- else -%}
                 <div class="mt-4">
                     <p class="text-center">
-                    <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p> 
+                    <a href="{% include download/item.html %}" target="_blank"><img src="{{ site.data.theme.objects }}/thumbs/{{ item.object-id }}_th.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p> 
                 </div>
                 {%- endif -%}
                 <div class="text-center my-2">
