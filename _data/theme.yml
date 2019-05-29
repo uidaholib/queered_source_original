@@ -3,13 +3,15 @@
 # Site settings
 title: Idaho Queered
 # choose metadata, be sure to also change page_gen data setting!
-metadata: boxing # check against cdm-collection-id below -- this should be used in config file as well
+metadata: idlgbtq # check against cdm-collection-id below -- this should be used in config file as well
 
 # repository variables (leave blank if self-contained)
 # url for our CDM server
-cdm-url: https://cdm17254.contentdm.oclc.org
+# cdm-url: https://cdm17254.contentdm.oclc.org
 # contentdm collection name 
-cdm-collection-id: boxing 
+# cdm-collection-id: boxing 
+# Objects dir location
+objects: https://www.lib.uidaho.edu/queered/objects/
 
 # header and head metadata
 tagline: Proud Histories from the Gem State
@@ -18,7 +20,7 @@ keywords: "Idaho; LGBTQ; oral history" # describing the whole collection -- add 
 author: # You! Add your github username 
 
 # Home page
-home-banner-image-number: 15 # use number of photo from collection
+# home-banner-image-number: 15 # use number of photo from collection
 home-banner-image-link:  # leave blank unless no cdm number to generate item
 home-banner-image-title: 1947-1948 University of Idaho boxing squad from https://digital.lib.uidaho.edu/cdm/ref/collection/boxing/id/9 # for accessibility 
 home-title-y-padding: 12em # the margin from the top your title portion will appear
