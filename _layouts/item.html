@@ -27,6 +27,10 @@ gallery: true
                         </audio>
                     </p>
                 </div>
+                {%- elsif page.youtube-id -%}
+                <div>
+                    <p><img src="{% include image/large.html %}" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
+                </div>
                 {%- elsif page.format contains 'video' -%}
                 <div class="mt-4">
                     <p class="text-center">
