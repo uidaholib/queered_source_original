@@ -1,5 +1,6 @@
 field,display-name,dc-map,browse-link
-title,Interviewee,DC.title
+title,,DC.title
+interviewee,Interviewee,
 interviewer,Interviewer,
 date,Date,DCTERMS.created
 description,Description,DC.description
@@ -9,5 +10,3 @@ longitude,Longitude
 transcriber,Transcribed by
 type,Type,DC.type
 format,Format
-standardized_rights,Rights
-rights_statement,Rights Statement
