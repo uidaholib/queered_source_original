@@ -1,26 +1,22 @@
-<script src="{{ '/assets/js/lunr.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/js/lunr-store.js' | absolute_url }}"></script>
+<script src="{{ '/js/lunr.min.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/data/lunr-store.js' | absolute_url }}"></script>
 <script>
 /* initialize lunr */
 var idx = lunr(function () {
   this.ref('id')
-  this.field('title')
-  this.field('authors')
-  this.field('subjects')
-  this.field('abstract')
+  this.field('name')
   this.field('date')
-  this.field('place')
+  this.field('description')
+  this.field('location')
 
   //this.pipeline.remove(lunr.trimmer)
 
   for (var item in store) {
     this.add({
-      title: store[item].title,
-      authors: store[item].authors,
-      subjects: store[item].subjects.join("; "),
-      abstract: store[item].abstract,
+      name: store[item].name,
       date: store[item].date,
-      place: store[item].place,
+      description: store[item].description,
+      location: store[item].location,
       id: item
     })
   }
@@ -52,10 +48,11 @@ function lunr_search () {
     var searchitem =
       '<tr>'+
           '<td class="">' +
-            '<p class="h4"><a href="{{ site.baseurl }}/data/' + store[ref].indexId + '.html">' + store[ref].title+ '</a></p>' +
+            '<p class="h4"><a href="{{ site.baseurl }}/items/' + store[ref].indexId + '.html">' + store[ref].name + '</a></p>' +
             '<p class="ml-3">' +
             store[ref].date + '. ' +
-            store[ref].abstract.split(" ").splice(0,30).join(" ") + '...<br>' +
+            store[ref].location + '<br>' +
+            store[ref].description.split(" ").splice(0,30).join(" ") + '...<br>' +
             '</p></td>' +
       '</tr>';
     resultdiv.append(searchitem);
