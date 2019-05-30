@@ -16,7 +16,7 @@ objects: https://www.lib.uidaho.edu/queered/objects
 
 # header and head metadata
 tagline: Proud Histories from the Gem State
-description: "Preserving LGBTQ history through video story telling." 
+description: "Preserving LGBTQ history through video storytelling." 
 keywords: "Idaho; LGBTQ; oral history" # describing the whole collection -- add to the two provided
 author: # You! Add your github username 
 
@@ -28,7 +28,7 @@ home-title-y-padding: 3em # the margin from the top your title portion will appe
 carousel-height: # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
 featured-subjects-max: 6 # set number of top subjects to display if auto generating
-featured-locations: Ada County; Bonne County; Latah County; Kootenai County; Power County; Bonneville County; Nez Perce County; Canyon County; Custer County #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
+featured-locations: Ada County;Bannock County;Bonne County;Bonner County;Bonneville County;Canyon County;Clearwater County;Custer County;Elmore County;Gem County;Kootenai County;Latah County;Lewis County;Madison County;Nez Perce County;Payette County;Power County;Teton County;Valley County #separate by semi-colon(';') - if left blank, will be automatically generated to create top 5 locations
 featured-locations-max: 3
 mediatypes: video #options[documents,images,video,sound,data] separate semi-colon(';'). If semi-colon is present, the browse items on the browse page will display a type field. If only one media type (and thus no semi-colon), no type field will display
 
