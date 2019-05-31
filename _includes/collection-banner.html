@@ -11,22 +11,28 @@
     padding-bottom: {{ site.data.theme.home-title-y-padding }};
 }
 .title-card {
-    background-color: #ffffffd1;
+    //background-color: #ffffffd1;
     border: 2px solid #191919;
     border-style: ridge;
 }
+#idahoq-logo { height: 200px; }
 </style>
 <div id="home-banner" class="jumbotron feature text-white p-0 mb-0 rounded-0" aria-label="{{ site.data.theme.home-banner-image-title }}">
     
-    <div id="home-title-box" class="col-md-8 mx-auto display-block text-center">
-        <div class="card text-dark title-card">
+    <div id="home-title-box" class="col-md-8 mx-auto display-block">
+        <div class="card text-dark title-card p-2">
+            <div class="row">
+                <div class="col-md-4 text-center"><img src="{{ '/idaho-queered-sm.jpg' | prepend: site.data.theme.objects }}" id="idahoq-logo" alt="State of Idaho with interviewees" class="img-fluid "></div>
+                <div class="col-md-8">
             <h1 class="display-4">{{ site.data.theme.fancy-title }}</h1>
             <p>{{ site.data.theme.tagline }}</p>
             <a title="University of Idaho Library Digital Initiatives" class="p-1 pb-3" href="https://www.lib.uidaho.edu/digital">
             <img src="https://www.lib.uidaho.edu/digital/justdi_logo_sm.png" alt="digital initiatives logo" ></a>
+                </div>
+                </div>
         </div>
     </div>
-    <div class="text-right p-1"><small><a class="text-info" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}">Featured Image</a></small></div>
+    <!--<div class="text-right p-1"><small><a class="text-info" href="{% if site.data.theme.home-banner-image-number %}{{ site.data.theme.home-banner-image-number | prepend: site.data.theme.metadata | prepend: '/items/' | prepend: site.baseurl | append: '.html' }}{% else %}{{ site.data.theme.home-banner-image-link }}{% endif %}">Featured Image</a></small></div>-->
 </div>
 {%- else -%}
 <div class="container">
