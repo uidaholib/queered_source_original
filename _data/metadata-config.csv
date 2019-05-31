@@ -5,8 +5,6 @@ interviewer,Interviewer,
 date,Date,DCTERMS.created
 description,Description,DC.description
 location,Location
-latitude,Latitude
-longitude,Longitude
 transcriber,Transcribed by
 type,Type,DC.type
 format,Format
