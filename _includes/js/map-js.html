@@ -4,6 +4,7 @@
 <script src="{{ '/leaflet/leaflet.js' | prepend: site.digital-assets }}"></script>
 <script src="{{ '/leaflet/fuse.min.js' | prepend: site.digital-assets }}"></script>
 <script src="{{ '/leaflet/leaflet.fusesearch.js' | prepend: site.digital-assets }}"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
 <script>
 (function(){
@@ -39,6 +40,9 @@
     searchCtrl.addTo(map);
     searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});
 
+    /* create cluster group */
+    var markers = L.markerClusterGroup({ maxClusterRadius: 20 });
+
     /* add geojson marker and popup */
     L.geoJson(geodata, {
         pointToLayer: function(feature,latlng){
@@ -48,11 +52,13 @@
             {% for f in fields %}{% if f.display %}
             '<br><strong>{{ f.display }}:</strong> ' + feature.properties.{{ f.field }} + {% endif %}{% endfor %}
             '<br><a target="_blank" class="btn btn-light" href="{% if site.data.theme.repo-link %}{{ site.data.theme.cdm-url }}/cdm/ref/collection/{{ site.data.theme.cdm-collection-id }}/id/' + feature.properties.cdm + '{% else %}{{ site.baseurl }}/items/' + feature.properties.id + '.html{% endif %}" >View</a></p>');
+            markers.addLayer(marker);
             return marker;
         }, 
         onEachFeature: function (feature, layer) {
             feature.layer = layer;
         }
-    }).addTo(map);
+    });
+    map.addLayer(markers);
 })();
 </script>
