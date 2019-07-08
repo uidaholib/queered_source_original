@@ -8,7 +8,7 @@ url: https://www.lib.uidaho.edu
 baseurl: /queered
 
 # url to the shared assets folder on Digital
-digital-assets: https://www.lib.uidaho.edu/digital/assets
+digital-assets: https://www.lib.uidaho.edu/assets
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
@@ -17,3 +17,5 @@ page_gen:
     name: 'object-id'
     dir: 'items'
     extension: 'html'   
+
+exclude: ['Rakefile']
