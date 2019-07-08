@@ -12,7 +12,7 @@ metadata: idlgbtq # check against cdm-collection-id below -- this should be used
 # contentdm collection name 
 # cdm-collection-id: boxing 
 # Objects dir location
-objects: https://www.lib.uidaho.edu/queered/objects
+objects: https://www.lib.uidaho.edu/media/queered
 
 # header and head metadata
 tagline: Proud Histories from the Gem State
@@ -22,7 +22,7 @@ author: # You! Add your github username
 
 # Home page
 # home-banner-image-number: 15 # use number of photo from collection
-home-banner-image-link:  https://www.lib.uidaho.edu/queered/objects/cecilie-johnsen-1154701-unsplash2.jpg # leave blank unless no cdm number to generate item
+home-banner-image-link:  https://www.lib.uidaho.edu/media/queered/cecilie-johnsen-1154701-unsplash2.jpg # leave blank unless no cdm number to generate item
 home-banner-image-title: Photo by Cecilie Johnsen on Unsplash # for accessibility 
 home-title-y-padding: 3em # the margin from the top your title portion will appear
 carousel-height: # in px, but don't include the "px"; default is 300.
