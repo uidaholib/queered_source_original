@@ -1,5 +1,7 @@
 # queered_source
 
+active project has moved to: https://github.com/thecdil/queered_cb-ohd 
+
 jekyll source for digital oral history project
 
 ## Press 
